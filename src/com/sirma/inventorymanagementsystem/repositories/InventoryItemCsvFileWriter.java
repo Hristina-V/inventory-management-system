@@ -1,6 +1,6 @@
 package com.sirma.inventorymanagementsystem.repositories;
 
-import com.sirma.inventorymanagementsystem.models.item.InventoryItem;
+import com.sirma.inventorymanagementsystem.models.model.item.InventoryItem;
 
 import java.util.List;
 import java.util.Map;

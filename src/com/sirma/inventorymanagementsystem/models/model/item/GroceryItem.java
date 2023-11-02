@@ -1,4 +1,4 @@
-package com.sirma.inventorymanagementsystem.models.item;
+package com.sirma.inventorymanagementsystem.models.model.item;
 
 import java.time.LocalDate;
 

@@ -1,14 +1,11 @@
 package com.sirma.inventorymanagementsystem.repositories.fragile;
 
-import com.sirma.inventorymanagementsystem.models.item.*;
-import com.sirma.inventorymanagementsystem.repositories.CsvFileReader;
+import com.sirma.inventorymanagementsystem.models.model.item.FragileItem;
+import com.sirma.inventorymanagementsystem.models.model.item.ItemCategory;
+import com.sirma.inventorymanagementsystem.models.model.item.ItemDetails;
 import com.sirma.inventorymanagementsystem.repositories.InventoryItemCsvFileReader;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-
 import static com.sirma.inventorymanagementsystem.repositories.CsvFileConstants.FRAGILE_FILE;
-import static com.sirma.inventorymanagementsystem.repositories.CsvFileConstants.GROCERIES_FILE;
 import static com.sirma.inventorymanagementsystem.repositories.groceries.GroceryCsvFileHeaderUtils.FILE_HEADER_LABELS;
 
 public class FragileCsvFileReader extends InventoryItemCsvFileReader<FragileItem> {

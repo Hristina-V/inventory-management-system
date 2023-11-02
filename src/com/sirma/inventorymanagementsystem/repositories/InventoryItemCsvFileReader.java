@@ -1,9 +1,6 @@
 package com.sirma.inventorymanagementsystem.repositories;
 
-import com.sirma.inventorymanagementsystem.models.item.InventoryItem;
-import com.sirma.inventorymanagementsystem.repositories.electronics.ElectronicsCsvFileReader;
-import com.sirma.inventorymanagementsystem.repositories.fragile.FragileCsvFileReader;
-import com.sirma.inventorymanagementsystem.repositories.groceries.GroceryCsvFileReader;
+import com.sirma.inventorymanagementsystem.models.model.item.InventoryItem;
 
 import java.util.Map;
 

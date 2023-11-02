@@ -1,8 +1,8 @@
 package com.sirma.inventorymanagementsystem.repositories.groceries;
 
-import com.sirma.inventorymanagementsystem.models.item.GroceryItem;
-import com.sirma.inventorymanagementsystem.models.item.ItemCategory;
-import com.sirma.inventorymanagementsystem.models.item.ItemDetails;
+import com.sirma.inventorymanagementsystem.models.model.item.GroceryItem;
+import com.sirma.inventorymanagementsystem.models.model.item.ItemCategory;
+import com.sirma.inventorymanagementsystem.models.model.item.ItemDetails;
 import com.sirma.inventorymanagementsystem.repositories.InventoryItemCsvFileReader;
 
 import java.time.LocalDate;

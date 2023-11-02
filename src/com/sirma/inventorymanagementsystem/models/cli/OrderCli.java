@@ -1,12 +1,17 @@
 package com.sirma.inventorymanagementsystem.models.cli;
 
-import com.sirma.inventorymanagementsystem.models.item.*;
+import com.sirma.inventorymanagementsystem.models.model.item.ElectronicsItem;
+import com.sirma.inventorymanagementsystem.models.model.item.FragileItem;
+import com.sirma.inventorymanagementsystem.models.model.item.GroceryItem;
+import com.sirma.inventorymanagementsystem.models.model.item.InventoryItem;
+import com.sirma.inventorymanagementsystem.models.model.order.Order;
 import com.sirma.inventorymanagementsystem.models.services.OrderService;
 import com.sirma.inventorymanagementsystem.models.services.InventoryItemService;
 import com.sirma.inventorymanagementsystem.repositories.electronics.ElectronicsCsvFileWriter;
 import com.sirma.inventorymanagementsystem.repositories.fragile.FragileCsvFileWriter;
 import com.sirma.inventorymanagementsystem.repositories.groceries.GroceryCsvFileWriter;
 
+import java.util.List;
 import java.util.Scanner;
 
 import static com.sirma.inventorymanagementsystem.models.services.GetItemIdService.getItemId;
@@ -18,6 +23,8 @@ public class OrderCli {
     private ChangeCategoryCli changeCategoryCli = new ChangeCategoryCli();
 
     private HomeMenuCli homeMenuCli = new HomeMenuCli(scanner);
+
+    private PaymentsCli paymentsCli = new PaymentsCli();
 
     private OrderService orderService = new OrderService();
 
@@ -49,11 +56,9 @@ public class OrderCli {
                     orderQuantity = Integer.parseInt(scanner.nextLine());
                 }
                 if (inventoryItem.getQuantity() > orderQuantity) {
-                    orderService.addNewItemToOrder(order, inventoryItem);
                     //if quantity > 0 -> reduce quantity and override file;
-                    inventoryItem.setQuantity(inventoryItem.getQuantity() - orderQuantity);
-
-                    inventoryItemService.saveInventoryItemToFile(inventoryItem);
+                    addOrderItem(order, inventoryItem, orderQuantity);
+                    inventoryItemService.changeItemQuantity(stringId, orderQuantity);
                     System.out.println("Item added to order.");
                 } else if (inventoryItem.getQuantity() == orderQuantity) {
                     orderService.addNewItemToOrder(order, inventoryItem);
@@ -70,9 +75,9 @@ public class OrderCli {
                                         " is " + inventoryItem.getQuantity());
                 }
                 } else if ("2".equals(userSelection)) {
-
+                    System.out.println(orderService.calculateTotalCost(order));
                 } else if ("3".equals(userSelection)) {
-
+                    paymentsCli.showPaymentMenu();
                 } else if ("4".equals(userSelection)) {
                     break;
                 } else {
@@ -80,6 +85,13 @@ public class OrderCli {
                 }
             }
         }
+
+    private void addOrderItem(Order order, InventoryItem inventoryItem, int orderQuantity) {
+        List<InventoryItem> orderItems = order.getOrderItems();
+        InventoryItem orderItem = inventoryItem;
+        orderItem.setQuantity(orderQuantity);
+        orderItems.add(orderItem);
+    }
 
 
     private void displayUserPrompt() {

@@ -1,9 +1,7 @@
 package com.sirma.inventorymanagementsystem.repositories.groceries;
 
-import com.sirma.inventorymanagementsystem.models.item.GroceryItem;
-import com.sirma.inventorymanagementsystem.repositories.BaseCsvFileHeaderUtils;
+import com.sirma.inventorymanagementsystem.models.model.item.GroceryItem;
 import com.sirma.inventorymanagementsystem.repositories.CsvFileConstants;
-import com.sirma.inventorymanagementsystem.repositories.CsvFileWriter;
 import com.sirma.inventorymanagementsystem.repositories.InventoryItemCsvFileWriter;
 
 import java.time.format.DateTimeFormatter;

@@ -1,9 +1,7 @@
 package com.sirma.inventorymanagementsystem.repositories.fragile;
 
-import com.sirma.inventorymanagementsystem.models.item.ElectronicsItem;
-import com.sirma.inventorymanagementsystem.models.item.FragileItem;
+import com.sirma.inventorymanagementsystem.models.model.item.FragileItem;
 import com.sirma.inventorymanagementsystem.repositories.CsvFileConstants;
-import com.sirma.inventorymanagementsystem.repositories.CsvFileWriter;
 import com.sirma.inventorymanagementsystem.repositories.InventoryItemCsvFileWriter;
 
 public class FragileCsvFileWriter extends InventoryItemCsvFileWriter<FragileItem> {

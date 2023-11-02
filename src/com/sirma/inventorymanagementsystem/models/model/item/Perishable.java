@@ -1,4 +1,4 @@
-package com.sirma.inventorymanagementsystem.models.item;
+package com.sirma.inventorymanagementsystem.models.model.item;
 
 public interface Perishable {
     //Include methods for checking if an item is perishable and for handling item expiration.

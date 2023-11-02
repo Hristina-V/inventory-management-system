@@ -1,6 +1,6 @@
 package com.sirma.inventorymanagementsystem.repositories.electronics;
 
-import com.sirma.inventorymanagementsystem.models.item.ElectronicsItem;
+import com.sirma.inventorymanagementsystem.models.model.item.ElectronicsItem;
 import com.sirma.inventorymanagementsystem.repositories.CsvFileConstants;
 import com.sirma.inventorymanagementsystem.repositories.InventoryItemCsvFileWriter;
 

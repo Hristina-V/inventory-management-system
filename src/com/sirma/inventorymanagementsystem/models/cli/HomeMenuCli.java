@@ -1,6 +1,6 @@
 package com.sirma.inventorymanagementsystem.models.cli;
 
-import com.sirma.inventorymanagementsystem.models.item.*;
+import com.sirma.inventorymanagementsystem.models.model.item.*;
 import com.sirma.inventorymanagementsystem.repositories.CsvFileConstants;
 import com.sirma.inventorymanagementsystem.repositories.electronics.ElectronicsCsvFileWriter;
 import com.sirma.inventorymanagementsystem.repositories.fragile.FragileCsvFileWriter;

@@ -1,4 +1,4 @@
-package com.sirma.inventorymanagementsystem.models.item;
+package com.sirma.inventorymanagementsystem.models.model.item;
 
 public interface Categorizable {
     //Include methods for setting and getting the item category.

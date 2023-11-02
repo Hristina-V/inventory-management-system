@@ -1,15 +1,10 @@
 package com.sirma.inventorymanagementsystem.models.cli;
 
-import com.sirma.inventorymanagementsystem.models.item.*;
-import com.sirma.inventorymanagementsystem.repositories.CsvFileConstants;
+import com.sirma.inventorymanagementsystem.models.model.item.*;
 import com.sirma.inventorymanagementsystem.repositories.CsvFileReader;
-import com.sirma.inventorymanagementsystem.repositories.CsvFileWriter;
 import com.sirma.inventorymanagementsystem.repositories.electronics.ElectronicsCsvFileReader;
-import com.sirma.inventorymanagementsystem.repositories.electronics.ElectronicsCsvFileWriter;
 import com.sirma.inventorymanagementsystem.repositories.fragile.FragileCsvFileReader;
-import com.sirma.inventorymanagementsystem.repositories.fragile.FragileCsvFileWriter;
 import com.sirma.inventorymanagementsystem.repositories.groceries.GroceryCsvFileReader;
-import com.sirma.inventorymanagementsystem.repositories.groceries.GroceryCsvFileWriter;
 
 import java.util.List;
 import java.util.Scanner;

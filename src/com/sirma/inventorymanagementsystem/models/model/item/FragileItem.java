@@ -1,6 +1,6 @@
-package com.sirma.inventorymanagementsystem.models.item;
+package com.sirma.inventorymanagementsystem.models.model.item;
 
-public class FragileItem extends InventoryItem{
+public class FragileItem extends InventoryItem {
 
     private double weight;
 

@@ -1,4 +1,6 @@
-package com.sirma.inventorymanagementsystem.models.item;
+package com.sirma.inventorymanagementsystem.models.model.order;
+
+import com.sirma.inventorymanagementsystem.models.model.item.InventoryItem;
 
 import java.util.ArrayList;
 import java.util.List;

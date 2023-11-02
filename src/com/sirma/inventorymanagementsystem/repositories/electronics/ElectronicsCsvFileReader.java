@@ -1,8 +1,8 @@
 package com.sirma.inventorymanagementsystem.repositories.electronics;
 
-import com.sirma.inventorymanagementsystem.models.item.ElectronicsItem;
-import com.sirma.inventorymanagementsystem.models.item.ItemCategory;
-import com.sirma.inventorymanagementsystem.models.item.ItemDetails;
+import com.sirma.inventorymanagementsystem.models.model.item.ElectronicsItem;
+import com.sirma.inventorymanagementsystem.models.model.item.ItemCategory;
+import com.sirma.inventorymanagementsystem.models.model.item.ItemDetails;
 import com.sirma.inventorymanagementsystem.repositories.InventoryItemCsvFileReader;
 
 import static com.sirma.inventorymanagementsystem.repositories.CsvFileConstants.ELECTRONICS_FILE;

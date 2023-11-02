@@ -1,3 +1,4 @@
 item_name;item_category;item_price;item_description;item_type;item_id;quantity;expiration_date
-bread;groceries;1.8;wholewheat;n.a.;872348;10;07/11/2023
-water;groceries;1.2;5 litres;n.a.;808311;10;15/12/2025
+bread;groceries;1.8;wholewheat;n.a.;872348;6;07/11/2023
+water;groceries;1.2;5 litres;n.a.;808311;6;15/12/2025
+coffee;groceries;9.8;500 grams nescafe;n.a.;485607;24;23/07/2024
